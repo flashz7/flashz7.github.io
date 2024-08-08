@@ -1,3 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Welcome to Flashz7 Cybersecurity!");
+document.addEventListener('DOMContentLoaded', function () {
+    var hamburgerMenu = document.getElementById('hamburger-menu');
+    var sidebar = document.getElementById('sidebar');
+
+    hamburgerMenu.addEventListener('click', function () {
+        sidebar.classList.toggle('sidebar-open');
+    });
 });
