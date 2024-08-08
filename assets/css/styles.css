@@ -1,0 +1,145 @@
+/* General styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-title-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e0e0e0;
+}
+
+.site-title {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 33.33%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.sidebar-content {
+    text-align: center;
+}
+
+.sidebar img {
+    width: 160px; /* Increased by 20% from 75px */
+    height: 160px; /* Keep it proportional */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white; /* Subtle white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: .6rem 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #000; /* Black color on hover */
+    transform: scale(1.05); /* Slightly pop out on hover */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #333; /* Change color on hover for LinkedIn */
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #0073b1;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.blog-post a:hover {
+    color: #005582;
+    border-bottom: 2px solid #005582;
+}
+
+.blog-post h2 a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.blog-post h2 a:hover {
+    color: #0073b1;
+    border-bottom: 2px solid #0073b1;
+}
